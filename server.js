@@ -1,8 +1,10 @@
 const express = require('express');
 const Datastore = require('nedb');
 const bodyParser = require('body-parser');
+const cors = require('cors')
+const app = express()
 
-const app = express();
+app.use(cors())
 const port = 8080;
 
 const db = new Datastore({ filename: 'database/books.db', autoload: true });
