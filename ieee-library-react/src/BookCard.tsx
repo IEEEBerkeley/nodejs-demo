@@ -16,7 +16,7 @@ const BookCard: React.FC<Book> = ({ _id, title, author }) => {
 
     return (
         <div className="card">
-            <img src="https://dictionary.cambridge.org/us/images/thumb/book_noun_001_01679.jpg?version=5.0.388" alt="Book Cover" />
+            <img src="https://media.istockphoto.com/id/173015527/photo/a-single-red-book-on-a-white-surface.jpg?s=612x612&w=0&k=20&c=AeKmdZvg2_bRY2Yct7odWhZXav8CgDtLMc_5_pjSItY=" alt="Book Cover" />
             <div className="card-info">
                 <h3>{title}</h3>
                 <p>{author}</p>
