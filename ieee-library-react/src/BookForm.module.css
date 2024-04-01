@@ -1,5 +1,5 @@
 /* src/BookForm.module.css */
-.book-form {
+.bookForm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,11 +11,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.book-form label {
+.bookForm label {
     margin-right: 10px;
 }
 
-.book-form input {
+.bookForm input {
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -42,3 +42,43 @@
 }
 
 
+
+
+
+
+
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent backdrop */
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    z-index: 1000; /* Ensure the backdrop is above other content */
+}
+
+.modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px; /* Slightly rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    z-index: 1001; /* Ensure the modal content is above the backdrop */
+    /* Add max-width and max-height to ensure it fits in the viewport */
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto; /* Enable scrolling for content that exceeds the modal size */
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer; /* Change the cursor to pointer to indicate it's clickable */
+    border: none; /* Remove border */
+    background: none; /* Remove background */
+    font-size: 1.5rem; /* Increase font size for better visibility */
+    color: #333; /* Dark color for the 'X' but not pure black */
+}

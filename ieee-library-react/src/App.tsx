@@ -10,8 +10,8 @@ function App() {
       <header className="App-header">
         <h1>Corona Public Library</h1>
       <BooksGallery />
-      </header>
       <BookForm />
+      </header>
     </div>
   );
 }
